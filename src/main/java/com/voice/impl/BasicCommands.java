@@ -1,11 +1,15 @@
 package com.voice.impl;
 
 import java.io.File;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.api.LsRemoteCommand;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.TransportException;
+import org.eclipse.jgit.lib.Ref;
 
 public class BasicCommands {
 
@@ -35,10 +39,8 @@ public class BasicCommands {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (Exception e) {
-
 			//System.out.println("Exception at " + e.getMessage());
 			e.printStackTrace();
 		}
-
 	}
 }
